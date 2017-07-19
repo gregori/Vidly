@@ -1,4 +1,4 @@
-﻿@model Vidly.ViewModels.MoviesIndexViewModel
+﻿@model IEnumerable<Vidly.Models.Movie>
 
 @{
     ViewBag.Title = "Index";
@@ -7,14 +7,14 @@
 
 <h2>Movies</h2>
 
-@if (@Model.Movies.Count > 0)
+@if (@Model.Any())
 {
     <table class="table table-bordered table-hover">
         <thead>
         <tr><th>Movie</th></tr>
         </thead>
         <tbody>
-        @foreach (var movie in Model.Movies)
+        @foreach (var movie in Model)
         {
             <tr><td>@movie.Name</td></tr>
         }

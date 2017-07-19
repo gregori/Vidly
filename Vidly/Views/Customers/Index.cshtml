@@ -1,4 +1,4 @@
-﻿@model Vidly.ViewModels.CustomersIndexViewModel
+﻿@model IEnumerable<Vidly.Models.Customer>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -6,14 +6,14 @@
 
 <h2>Customers</h2>
 
-@if (@Model.Customers.Count > 0)
+@if (@Model.Any())
 {
     <table class="table table-bordered table-hover">
         <thead>
             <tr><th>Customer</th></tr>
         </thead>
         <tbody>
-            @foreach (var customer in Model.Customers)
+            @foreach (var customer in Model)
             {
                 <tr><td>@Html.ActionLink(@customer.Name, "Details", new { customer.Id })</td></tr>
             }

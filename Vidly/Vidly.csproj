@@ -228,6 +228,14 @@
     <Compile Include="Migrations\201707202015164_AddBirthdayToCustomer.Designer.cs">
       <DependentUpon>201707202015164_AddBirthdayToCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707202057518_AddPropertiesToMovieClass.cs" />
+    <Compile Include="Migrations\201707202057518_AddPropertiesToMovieClass.Designer.cs">
+      <DependentUpon>201707202057518_AddPropertiesToMovieClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707202100047_InsertMovieGenres.cs" />
+    <Compile Include="Migrations\201707202100047_InsertMovieGenres.Designer.cs">
+      <DependentUpon>201707202100047_InsertMovieGenres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -235,6 +243,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\MovieGenre.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomersIndexViewModel.cs" />
@@ -304,6 +313,7 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -347,6 +357,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707202015164_AddBirthdayToCustomer.resx">
       <DependentUpon>201707202015164_AddBirthdayToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707202057518_AddPropertiesToMovieClass.resx">
+      <DependentUpon>201707202057518_AddPropertiesToMovieClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707202100047_InsertMovieGenres.resx">
+      <DependentUpon>201707202100047_InsertMovieGenres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

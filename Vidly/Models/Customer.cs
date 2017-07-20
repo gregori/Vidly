@@ -12,6 +12,8 @@ namespace Vidly.Models
         [Required]
         [StringLength(255)]
         public string Name { get; set; }
+
+        public DateTime? BirthDay { get; set; }
         public bool IsSubscribedToNewsletter { get; set; }
         // Navigation property
         public MembershipType MembershipType { get; set; }

@@ -7,8 +7,10 @@
 
 <h2>Movies</h2>
 
-@Html.ActionLink("NEW MOVIE", "New", null , new { @class = "btn btn-primary"})
-<br><br>
+<p>
+    @Html.ActionLink("New Movie", "New", null, new { @class = "btn btn-primary" })    
+</p>
+
 @if (@Model.Any())
 {
     <table class="table table-bordered table-hover">

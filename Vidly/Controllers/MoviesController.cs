@@ -73,7 +73,6 @@ namespace Vidly.Controllers
                 Movie = movie,
                 MovieGenres = _context.MovieGenres.ToList()
             };
-            ViewBag.Title = "Edit Movie";
 
             return View("MovieForm", viewModel);
         }
@@ -85,8 +84,6 @@ namespace Vidly.Controllers
             {
                 MovieGenres = movieGenres
             };
-
-            ViewBag.Title = "New Movie";
 
             return View("MovieForm", viewModel);
         }

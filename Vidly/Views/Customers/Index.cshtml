@@ -6,6 +6,10 @@
 
 <h2>Customers</h2>
 
+<p>
+    @Html.ActionLink("New Customer", "New", null, new { @class = "btn btn-primary" })
+</p>
+
 @if (@Model.Any())
 {
     <table class="table table-bordered table-hover">

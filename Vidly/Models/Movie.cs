@@ -24,6 +24,7 @@ namespace Vidly.Models
         public MovieGenre MovieGenre { get; set; }
 
         [Display(Name = "Movie Genre")]
+        [Required]
         public byte MovieGenreId { get; set; }
     }
 }

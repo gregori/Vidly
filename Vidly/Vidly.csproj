@@ -236,6 +236,18 @@
     <Compile Include="Migrations\201707202100047_InsertMovieGenres.Designer.cs">
       <DependentUpon>201707202100047_InsertMovieGenres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707261456530_AddRequiredNameForMembershipType.cs" />
+    <Compile Include="Migrations\201707261456530_AddRequiredNameForMembershipType.Designer.cs">
+      <DependentUpon>201707261456530_AddRequiredNameForMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707261640309_AddRangeRequirementToNumberInStokFromMovie.cs" />
+    <Compile Include="Migrations\201707261640309_AddRangeRequirementToNumberInStokFromMovie.Designer.cs">
+      <DependentUpon>201707261640309_AddRangeRequirementToNumberInStokFromMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707261800165_AddRequiredFieldsToMovie.cs" />
+    <Compile Include="Migrations\201707261800165_AddRequiredFieldsToMovie.Designer.cs">
+      <DependentUpon>201707261800165_AddRequiredFieldsToMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -267,9 +279,22 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\cldr.js" />
+    <Content Include="Scripts\cldr\event.js" />
+    <Content Include="Scripts\cldr\supplemental.js" />
+    <Content Include="Scripts\cldr\unresolved.js" />
+    <Content Include="Scripts\globalize.js" />
+    <Content Include="Scripts\globalize\currency.js" />
+    <Content Include="Scripts\globalize\date.js" />
+    <Content Include="Scripts\globalize\message.js" />
+    <Content Include="Scripts\globalize\number.js" />
+    <Content Include="Scripts\globalize\plural.js" />
+    <Content Include="Scripts\globalize\relative-time.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.globalize.js" />
+    <Content Include="Scripts\jquery.validate.globalize.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -368,6 +393,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201707202100047_InsertMovieGenres.resx">
       <DependentUpon>201707202100047_InsertMovieGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707261456530_AddRequiredNameForMembershipType.resx">
+      <DependentUpon>201707261456530_AddRequiredNameForMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707261640309_AddRangeRequirementToNumberInStokFromMovie.resx">
+      <DependentUpon>201707261640309_AddRangeRequirementToNumberInStokFromMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707261800165_AddRequiredFieldsToMovie.resx">
+      <DependentUpon>201707261800165_AddRequiredFieldsToMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

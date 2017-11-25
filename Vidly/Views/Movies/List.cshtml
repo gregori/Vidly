@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -36,7 +35,7 @@
                         data: "name",
                         render: function(data, type, movie) {
                             return "<a href='/movies/edit/" + movie.id + "'>" + movie.name +
-                            "</a>";
+                                "</a>";
                         }
                     },
                     {
@@ -71,4 +70,3 @@
         });
     </script>
 }
-
